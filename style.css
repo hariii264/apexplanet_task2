@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  color: #22223b;
+}
+
+header {
+  background-color: #5a3976;
+  padding: 24px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #c564b6;
+  padding: 10px 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  background-color: #8fd8f5;
+  color: #22223b;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.page {
+  display: none;
+  animation: fade 0.4s ease-in-out;
+}
+
+.page.active {
+  display: block;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h2 {
+  color: #4a4e69;
+  margin-bottom: 20px;
+}
+
+input[type=\"text\"] {
+  padding: 12px;
+  width: 60%;
+  max-width: 400px;
+  border: 2px solid #4a4e69;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #9a8c98;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #c9ada7;
+  color: #22223b;
+}
+
+.moods button {
+  background-color: #c9ada7;
+  color: #22223b;
+  padding: 10px 18px;
+  margin: 6px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.moods button:hover {
+  background-color: #9a8c98;
+  color: white;
+}
+
+#moodDisplay {
+  font-size: 1.6rem;
+  margin-top: 15px;
+  color: #4a4e69;
+}
+
+#taskList {
+  margin-top: 25px;
+}
+
+#taskList li {
+  background: #ffffff;
+  margin: 12px 0;
+  padding: 14px;
+  border-left: 6px solid #22223b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#taskList li button {
+  background-color: #4a4e69;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+#taskList li button:hover {
+  background-color: #9a8c98;
+}
+
+#factText {
+  margin-top: 20px;
+  background-color: #f2e9e4;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 6px solid #9a8c98;
+  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
